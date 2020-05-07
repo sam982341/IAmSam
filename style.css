@@ -85,6 +85,7 @@ section {
     height: 100%;
     background-color: rgb(33, 37, 43);
     display: grid;
+    z-index: 1;
 }
 
 .navbar ul {
@@ -96,7 +97,16 @@ section {
     padding: 0;
 }
 
-.navbar i {
+.navbar .main-nav {
+    justify-content: flex-start;
+}
+
+.navbar .social-nav {
+    justify-content: flex-end;
+}
+
+
+.navbar .main-nav i {
     font-size: 150%;
     text-align: center;
     margin-top: 15px;
@@ -104,8 +114,20 @@ section {
     color: var(--grey-color);
 }
 
-.navbar i .fa-home {
-    color: var(--blue-color);
+.navbar .main-nav i:hover {
+    color: var(--green-color);
+}
+
+.navbar .social-nav i {
+    font-size: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--grey-color);
+}
+
+.navbar .social-nav i:hover {
+    color: var(--green-color);
 }
 
 i:hover {
@@ -137,4 +159,48 @@ h4 {
 .headshot {
     width: 300px;
     border-radius: 50%;
+}
+
+/* media queries */
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        width: 100%;
+        height: 70px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar .main-nav {
+        justify-content: center;
+    }
+
+    .navbar .social-nav {
+        display: none;
+    }
+
+    .navbar .main-nav i {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .numbers-section {
+        margin-top: 80px;
+        margin-left: 5px;
+    }
+
+    .main {
+        margin-left: 40px;
+    }
 }
