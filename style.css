@@ -1,0 +1,140 @@
+/* 
+Text Colors: 
+Grey: (205, 211, 222)
+Purple: (190, 116, 212)
+Red: (224, 108, 117)
+Green: (150, 193, 120)
+Blue: (86, 182, 194)
+
+*/
+
+:root {
+    --grey-color: rgb(205, 211, 222);
+    --purple-color: rgb(190, 116, 212);
+    --red-color: rgb(224, 108, 117);
+    --green-color: rgb(150, 193, 120);
+    --blue-color: rgb(86, 182, 194);
+}
+
+@font-face {
+    font-family: 'Monaco';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Monaco'), url('Monaco.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(40, 44, 52);
+    font-family: 'Monaco';
+    margin: 0;
+    color: #fff;
+    height: 100vh;
+    line-height: 1.6;
+    /* overflow: hidden; */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll 
+    overflow-y: scroll;
+    scroll-behavior: smooth; */
+    scroll-snap-type: y mandatory;
+}
+
+.main {
+    margin-left: 125px;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    /* Scroll Snap */
+    scroll-snap-align: center;
+}
+
+.numbers-section {
+    position: fixed;
+    margin-left: 70px;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    margin-right: 50px;
+}
+
+.number {
+    color: rgb(61, 62, 66);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background-color: rgb(33, 37, 43);
+    display: grid;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar i {
+    font-size: 150%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--grey-color);
+}
+
+.navbar i .fa-home {
+    color: var(--blue-color);
+}
+
+i:hover {
+    color: var(--blue-color);
+}
+
+.name {
+    color: #fff;
+    font-size: 350%;
+}
+
+h1 {
+    margin-top: 5px;
+}
+
+h2 {
+    color: rgb(190, 116, 212);
+    size: 700px;
+}
+
+h3 {
+    color: rgb(86, 182, 194);
+}
+
+h4 {
+    color: var(--grey-color);
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 50%;
+}
