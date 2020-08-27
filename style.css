@@ -12,7 +12,7 @@ Blue: (86, 182, 194)
     --grey-color: rgb(205, 211, 222);
     --purple-color: rgb(190, 116, 212);
     --red-color: rgb(224, 108, 117);
-    --green-color: rgb(150, 193, 120);
+    --green-color: rgb(155, 214, 113);
     --blue-color: rgb(86, 182, 194);
     --darkgrey-color: rgb(61, 62, 66);
 }
@@ -50,6 +50,7 @@ body {
 
 .main {
     margin-left: 125px;
+    margin-right: 25%;
 }
 
 .numbers-section {
@@ -237,5 +238,12 @@ h4 {
 
     .main {
         margin-left: 40px;
+        padding-left: 5px;
+        padding-right: 15px;
+        margin-right: 0px;
+    }
+
+    .headshot {
+        margin-left: 15px;
     }
 }
